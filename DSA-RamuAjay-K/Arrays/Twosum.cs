@@ -30,8 +30,25 @@ namespace DSA_RamuAjay_K.Arrays
 
         public int[] TwoNumberSumWithSlidingWindow(int[] input, int target)
         {
-            Array.Sort(input);
-            
+
+            //1,34,5
+            Array.Sort(input);///1,5,34
+            int left =0;
+            int right =input.Length - 1;    
+            while (left < right)
+            {
+                if (input[left] + input[right] == target)
+                    return new int[] { input[left], input[right] };
+                else if (input[left] + input[right] > target) {
+                    right--;
+
+                }
+                else if (input[left] + input[right] < target) {
+                    left++;
+                }
+
+            }
+            return new int[2] { 0, left };
         }
 
 

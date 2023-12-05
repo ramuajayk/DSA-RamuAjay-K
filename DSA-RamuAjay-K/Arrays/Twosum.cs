@@ -25,7 +25,7 @@ namespace DSA_RamuAjay_K.Arrays
                     storeIteration.Add(i);  
                 }
             }
-            return new int[2] { 0, 0 };
+            return new int[0];
         }
 
         public int[] TwoNumberSumWithSlidingWindow(int[] input, int target)

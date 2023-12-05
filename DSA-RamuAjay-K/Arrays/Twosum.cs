@@ -48,7 +48,7 @@ namespace DSA_RamuAjay_K.Arrays
                 }
 
             }
-            return new int[2] { 0, left };
+            return new int[0];
         }
 
 
